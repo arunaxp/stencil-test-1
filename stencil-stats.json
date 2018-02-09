@@ -1,0 +1,201 @@
+{
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.4.0"
+  },
+  "app": {
+    "namespace": "App",
+    "fsNamespace": "app",
+    "components": 6,
+    "entries": 3,
+    "bundles": 6
+  },
+  "options": {
+    "generateWWW": true,
+    "generateDistribution": false,
+    "minifyJs": true,
+    "minifyCss": true,
+    "hashFileNames": true,
+    "hashedFileNameLength": 8,
+    "buildEs5": true
+  },
+  "components": [
+    {
+      "tag": "app-profile",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "stencil-route",
+      "dependencies": [],
+      "dependencyOf": [
+        "my-app"
+      ]
+    },
+    {
+      "tag": "stencil-router",
+      "dependencies": [],
+      "dependencyOf": [
+        "my-app"
+      ]
+    },
+    {
+      "tag": "my-app",
+      "dependencies": [
+        "stencil-route",
+        "stencil-router"
+      ],
+      "dependencyOf": []
+    },
+    {
+      "tag": "stencil-route-link",
+      "dependencies": [
+        "stencil-route-link"
+      ],
+      "dependencyOf": [
+        "app-home",
+        "stencil-route-link"
+      ]
+    },
+    {
+      "tag": "app-home",
+      "dependencies": [
+        "stencil-route-link"
+      ],
+      "dependencyOf": []
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "entry:app-profile",
+      "components": [
+        {
+          "tag": "app-profile",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "nkzoukxb.js",
+          "size": 448,
+          "outputs": []
+        },
+        {
+          "fileName": "nkzoukxb.es5.js",
+          "size": 786,
+          "outputs": [],
+          "target": "es5"
+        }
+      ],
+      "input": [
+        {
+          "filePath": "dist/collection/components/app-profile/app-profile.js"
+        }
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry:my-app.stencil-route.stencil-router",
+      "components": [
+        {
+          "tag": "stencil-route",
+          "dependencies": [],
+          "dependencyOf": [
+            "my-app"
+          ]
+        },
+        {
+          "tag": "stencil-router",
+          "dependencies": [],
+          "dependencyOf": [
+            "my-app"
+          ]
+        },
+        {
+          "tag": "my-app",
+          "dependencies": [
+            "stencil-route",
+            "stencil-router"
+          ],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "af6x4dyf.js",
+          "size": 13950,
+          "outputs": []
+        },
+        {
+          "fileName": "af6x4dyf.es5.js",
+          "size": 13778,
+          "outputs": [],
+          "target": "es5"
+        }
+      ],
+      "input": [
+        {
+          "filePath": "dist/collection/components/my-app/my-app.js"
+        },
+        {
+          "filePath": "node_modules/@stencil/router/dist/collection/components/route/route.js"
+        },
+        {
+          "filePath": "node_modules/@stencil/router/dist/collection/components/router/router.js"
+        }
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry:app-home.stencil-route-link",
+      "components": [
+        {
+          "tag": "stencil-route-link",
+          "dependencies": [
+            "stencil-route-link"
+          ],
+          "dependencyOf": [
+            "app-home",
+            "stencil-route-link"
+          ]
+        },
+        {
+          "tag": "app-home",
+          "dependencies": [
+            "stencil-route-link"
+          ],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "khiwwsio.js",
+          "size": 2456,
+          "outputs": []
+        },
+        {
+          "fileName": "khiwwsio.es5.js",
+          "size": 2978,
+          "outputs": [],
+          "target": "es5"
+        }
+      ],
+      "input": [
+        {
+          "filePath": "dist/collection/components/app-home/app-home.js"
+        },
+        {
+          "filePath": "node_modules/@stencil/router/dist/collection/components/route-link/route-link.js"
+        }
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    }
+  ]
+}

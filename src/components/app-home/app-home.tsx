@@ -8,6 +8,9 @@ import { Component } from '@stencil/core';
 export class AppHome {
 
   render() {
+    const el = document.createElement('ion-alert-controller');
+    console.log(el);
+    (el as any).componentOnReady();
     return (
       <div class='app-home'>
         <p>
