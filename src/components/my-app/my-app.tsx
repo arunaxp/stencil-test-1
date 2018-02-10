@@ -1,5 +1,5 @@
 import { Component } from '@stencil/core';
-
+import { createElement } from '../../create-element';
 
 @Component({
   tag: 'my-app',
@@ -8,6 +8,9 @@ import { Component } from '@stencil/core';
 export class MyApp {
 
   render() {
+
+    createElement();
+
     return (
       <div>
         <header>
